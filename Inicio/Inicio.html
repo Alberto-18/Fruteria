@@ -4,6 +4,7 @@
 
     <head>
         <link rel="stylesheet" type="text/css" href="/estilos/estilos.css">
+        <script type="text/javascript" src="/Fruteria3/JavaScript/javascript.js"></script>
         <title>Fruteria</title>
 
     </head>
@@ -80,8 +81,14 @@
         </section>
         <br></br>
 
-        <button onclick="enviar()">Hacer pedido</button>
         
+        
+        <div id="boton">
+            <input type="button" value="Comprar" onclick="enviar()">
+            <br>
+            <textarea rows="20" cols="100" id="cajaTexto"></textarea>
+        </div>
+        <button onclick="enviar()">Hacer pedido</button>
         <footer id="Contactanos">
             <div>
                 <h3>Contactanos</h3>
