@@ -3,106 +3,118 @@
 <html lang="es">
 
     <head>
-        <link rel="stylesheet" type="text/css" href="/estilos/estilos.css">
-        <script type="text/javascript" src="/Fruteria3/JavaScript/javascript.js"></script>
-        <title>Fruteria</title>
+        <link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+        <script type="text/javascript" src="../JavaScript/javascript.js"></script>
+        <title>Fruteria4</title>
 
     </head>
 
     <body> 
-
+ 
         <section id="contenedor">
             <h1>Pera</h1>
-            <img src="/Imagenes/pera.jpg" id="imegenes" onclick="compra('Pera')">
+            <img src="../Imagenes/pera.jpg" id="imegenes" onclick="compra('Pera')">
         
         </section>
         <br></br>
-
+ 
         <section id="contenedor">
             <h1>Manzana</h1>
-            <img src="/Imagenes/manzana.png" id="imegenes"onclick="compra('Manzana')">
+            <img src="../Imagenes/manzana.png" id="imegenes"onclick="compra('Manzana')">
             
         </section>
         <br></br>
-
+ 
         <section id="contenedor">
             <h1>Uva</h1>
-            <img src="/Imagenes/uva.jpg" id="imegenes" onclick="compra('Uva')">
+            <img src="../Imagenes/uva.jpg" id="imegenes" onclick="compra('Uva')">
             
         </section>
         <br></br>
-
+ 
         <section id="contenedor">
             <h1>Melocotón</h1>
-            <img src="/Imagenes/melocoton.jpg" id="imegenes" onclick="compra('Melocotón')">
+            <img src="../Imagenes/melocoton.jpg" id="imegenes" onclick="compra('Melocotón')">
             
         </section>
         <br></br>
-
+ 
         <section src="contenedor">
             <h1>Sandia</h1>
-            <img src="/Imagenes/sandia.jpg" id="imegenes" onclick="compra('Sandia')">
+            <img src="../Imagenes/sandia.jpg" id="imegenes" onclick="compra('Sandia')">
             
         </section>
         <br></br>
-
+ 
         <section src="contenedor">
             <h1>Melón</h1>
-            <img src="/Imagenes/melon.jpg" id="imegenes" onclick="compra('Melón')">
+            <img src="../Imagenes/melon.jpg" id="imegenes" onclick="compra('Melón')">
             
         </section>
         <br></br>
-
+ 
         <section src="contenedor">
             <h1>Platanos</h1>
-            <img src="/Imagenes/platanos.jpg" id="imegenes" onclick="compra('Platanos')">
+            <img src="../Imagenes/platanos.jpg" id="imegenes" onclick="compra('Platanos')">
             
         </section>
         <br></br>
-
+ 
         <section src="contenedor">
             <h1>Kiwi</h1>
-            <img src="/Imagenes/kiwi.jpg" id="imegenes" onclick="compra('Kiwi')">
+            <img src="../Imagenes/kiwi.jpg" id="imegenes" onclick="compra('Kiwi')">
             
         </section>
         <br></br>
-
+ 
         <section src="contenedor">
             <h1>Fresa</h1>
-            <img src="/Imagenes/fresa.jpeg" id="imegenes" onclick="compra('Fresa')">
+            <img src="../Imagenes/fresa.jpeg" id="imegenes" onclick="compra('Fresa')">
             
         </section>
         <br></br>
-
+ 
         <section src="contenedor">
             <h1>Naranja</h1>
-            <img src="/Imagenes/naranja.jpg" id="imegenes" onclick="compra('Naranja')">
+            <img src="../Imagenes/naranja.jpg" id="imegenes" onclick="compra('Naranja')">
             
         </section>
         <br></br>
-
+ 
+        <form action="ejemplo.php" method="get">
+            <p>Nombre: <input type="text" name="nombre" minlength="3" maxlength="15"></p>
+            <p>1ª Apellido: <input type="text" name="pApellido" maxlength="40"></p>
+            <p>2º Apellido: <input type="text" name="sApellido" maxlength="40"></p>
+            <p>E-mail:<input type="email" name="direccionemail" placeholder=" usuario@servidor.com"></p>
+            <p>Pago:
+                <input type="radio" name="pg" value="Tarjeta"> Tarjeta
+                <input type="radio" name="pg" value="Contrareembolso"> Contrareembolso
+            </p>
+            <p>Tarjeta de Cliente:
+                <input type="radio" name="tc" value="si"> Si
+                <input type="radio" name="tc" value="no"> No
+            </p>
+            <button onclick="limpiarFormulario()">Limpiar Formulario</button>
+            <p><button onclick="realizarPedido()" type="submit">Realizar Pedido</button></p>
+           
+        </form>
+ 
         
-        
-        <div id="boton">
-            <input type="button" value="Comprar" onclick="enviar()">
-            <br>
-            <textarea rows="20" cols="100" id="cajaTexto"></textarea>
-        </div>
-        <button onclick="enviar()">Hacer pedido</button>
         <footer id="Contactanos">
             <div>
                 <h3>Contactanos</h3>
                 <ul>
-                    <li><b>Tlfn:</b> 555 012 225</li>
-                    <li><b>Fax:</b> 555 225 012</li>
+                    <li><b>Tlfn: </b> 555 012 225 </li>
+                    <li><b>Fax:  </b> 555 225 012 </li>
                     <li><b>Oficinas:</b> 742 Evergreen Terrace</li>
                 </ul>
             </div>
-
+ 
         </footer>
         
         
     </body>
+ 
 
 
 </html>
